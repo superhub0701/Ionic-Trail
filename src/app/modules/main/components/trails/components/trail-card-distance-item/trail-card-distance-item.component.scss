@@ -1,0 +1,36 @@
+@import '../../../../../../../theme/variables.scss';
+
+:host {
+  .trail-distance-item {
+    margin-top: 16px;
+
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .trail-distance-item-name {
+      font-family: $font-family-base;
+      font-weight: $font-weight-semi-bold;
+      font-size: 15px;
+      line-height: 18px;
+      letter-spacing: -0.43px;
+      text-align: left;
+      color: $color-heading-text;
+    }
+
+    .trail-distance-item-title, .trail-verified {
+      font-family: $font-family-base;
+      font-weight: $font-weight-bold;
+      font-size: 13px;
+      line-height: 15px;
+      letter-spacing: 0px;
+      text-align: left;
+      color: $color-heading-note-text;
+    }
+    
+    .trail-verified, .trail-verified-img {
+      opacity: 0.6;
+    }
+  }
+}

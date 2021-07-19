@@ -1,0 +1,41 @@
+:host {
+  .toolbar-title {
+    padding-inline-start: 10px;
+  }
+
+  app-content-header-view {
+    ::ng-deep {
+      .header-view {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  app-trail-places-item {
+    ::ng-deep {
+      ion-item {
+        --padding-start: 20px !important;
+      }
+    }
+  }
+
+  ion-badge {
+    border-radius: 100%;
+    --padding-top: 4px;
+    --padding-end: 4px;
+    --padding-bottom: 4px;
+    --padding-start: 4px;
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+    height: 10px;
+    width: 10px;
+  }
+
+  .add-button {
+    --padding-start: 12px;
+    --padding-end: 12px;
+  }
+}

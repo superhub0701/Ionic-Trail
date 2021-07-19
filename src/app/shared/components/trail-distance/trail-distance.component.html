@@ -1,0 +1,9 @@
+<ion-text color="heading-note">
+  <ion-icon
+    name="location-sharp"
+    color="warning2"
+    *ngIf="!showLoading"
+  ></ion-icon>
+  <ion-spinner name="lines-small" *ngIf="showLoading"></ion-spinner>
+  <ng-container *ngIf="!showLoading"> {{ isUnitKM? distanceKM : (Math.round(distanceKM * 6.214) / 10).toFixed(1) }} {{isUnitKM? 'km' : 'mile'}} </ng-container>
+</ion-text>
